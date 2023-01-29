@@ -4,7 +4,8 @@ from django.shortcuts import render, HttpResponse
 
 
 def index(request):
-    return HttpResponse("欢迎使用")
+    # return HttpResponse("欢迎使用")
+    return render(request, "index.html")
 
 
 def user_list(request):
